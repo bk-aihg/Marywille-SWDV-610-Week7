@@ -1,4 +1,3 @@
-
 class State():
     def __init__(self, cannibalLeft, missionaryLeft, boatMovement, cannibalRight, missionaryRight, boatCannibal, boatMissionary):
         self.cannibalLeft = cannibalLeft
@@ -140,14 +139,10 @@ def backtrace_graph(solution):
     for item in range(len(path_state)):
         state = path_state[len(path_state) - item - 1]
 
-
-
         print("Boat moving in {} the direction, taking {} Cannibals and {} missionary".
                 format(state.boatMovement, state.boatCannibal, state.boatMissionary))
         print("{} Cannibals and {} Missionaries on the left side of bank".format(state.cannibalLeft, state.missionaryLeft))
-        print("{} Cannibals and {} Missionaries on the right side of bank".format(state.cannibalRight, state.missionaryRight))
-
-
+        print("{} Cannibals and {} Missionaries on the right side of bank".format(state.cannibalRight, state.missionaryRight)
         print("--------------------------------------------------------")
         print("--------------------------------------------------------")
 
